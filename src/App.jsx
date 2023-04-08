@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { DadosPessoaisForm } from "./components/DadosCliente";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Inicio do projeto</h1>
+    <div>
+      <h1></h1>
+      <DadosPessoaisForm />
     </div>
   );
 }
