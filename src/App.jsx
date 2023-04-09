@@ -1,3 +1,4 @@
+import { Agradecimento } from "./components/Agradecimento";
 import { DadosPessoaisForm } from "./components/DadosCliente";
 import { Endereco } from "./components/Endereco";
 
@@ -6,6 +7,7 @@ function App() {
     <div>
       <DadosPessoaisForm />
       <Endereco />
+      <Agradecimento />
     </div>
   );
 }
