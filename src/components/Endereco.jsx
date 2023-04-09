@@ -2,37 +2,117 @@ import { Container, Row, Col, Form } from "react-bootstrap";
 
 export function Endereco() {
   return (
-    <Container>
-      <Row className="mt-4 mb-2">
-        <Col className="pe-5  pt-5">
-          <h3>Endereço</h3>
-        </Col>
-      </Row>
-      <Row>
-        <Col className="col-md-8">
-          <Form>
-            <Form.Group className="mb=3">
-              <Form.Label className="mt-2">Logradouro</Form.Label>
-              <Form.Control type="text" placeholder="Digite o nome da rua" />
-              <Form.Label className="mt-2">Número</Form.Label>
-              <Form.Control type="number" placeholder="Número da casa" />
-              <Form.Label className="mt-2">Bairro</Form.Label>
-              <Form.Control type="text" placeholder="Digite o bairro" />
-              <Form.Label className="mt-2">Complemento</Form.Label>
-              <Form.Control
-                type="text"
-                placeholder="Ex: n° do apto / cor da casa/ ref. próxima"
-              />
-              <Form.Label className="mt-2">Cidade</Form.Label>
-              <Form.Control type="text" placeholder="Digite a cidade" />
-              <Form.Label className="mt-2">CEP</Form.Label>
-              <Form.Control type="number" placeholder="Seu CEP" />
-              <Form.Label className="mt-2">Estado</Form.Label>
-              <Form.Control type="text" placeholder="Digite o estado" />
-            </Form.Group>
-          </Form>
-        </Col>
-      </Row>
-    </Container>
+    <div>
+      <div className="col-12">
+        <label className="form-label" htmlFor="logradouro">
+          Logradouro:
+        </label>
+        <div className="input-group mb-3 col-12">
+          <input
+            type="text"
+            className="form-control"
+            name="logradouro"
+            id="logradouro"
+            placeholder="Logradouro"
+            required
+          />
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-4">
+          <label className="form-label" htmlFor="numero">
+            Nº:
+          </label>
+          <div className="input-group">
+            <input
+              type="text"
+              className="form-control"
+              name="numero"
+              id="numero"
+              placeholder="Nº"
+              required
+            />
+          </div>
+        </div>
+        <div className="col-8">
+          <label className="form-label" htmlFor="complemento">
+            Complemento:
+          </label>
+          <div className="input-group">
+            <input
+              type="text"
+              className="form-control"
+              name="complemento"
+              id="complemento"
+              placeholder="Complemento"
+            />
+          </div>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-6">
+          <label className="form-label" htmlFor="bairro">
+            Bairro:
+          </label>
+          <div className="input-group">
+            <input
+              type="text"
+              className="form-control"
+              name="bairro"
+              id="bairro"
+              placeholder="Bairro"
+              required
+            />
+          </div>
+        </div>
+        <div className="col-6">
+          <label className="form-label" htmlFor="cidade">
+            Cidade:
+          </label>
+          <div className="input-group">
+            <input
+              type="text"
+              className="form-control"
+              name="cidade"
+              id="cidade"
+              placeholder="Cidade"
+              required
+            />
+          </div>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-6">
+          <label className="form-label" htmlFor="cep">
+            CEP:
+          </label>
+          <div className="input-group">
+            <input
+              type="text"
+              className="form-control"
+              name="cep"
+              id="cep"
+              placeholder="CEP"
+              required
+            />
+          </div>
+        </div>
+        <div className="col-6">
+          <label className="form-label" htmlFor="estado">
+            Estado:
+          </label>
+          <div className="input-group">
+            <input
+              type="text"
+              className="form-control"
+              name="estado"
+              id="estado"
+              placeholder="Estado"
+              required
+            />
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
